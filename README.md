@@ -49,13 +49,28 @@ void GL_Triangle( float x1, float y1, float x2, float y2, float x3, float y3 )
 ```
 Description: Draws a triangle to the screen
 
+### GL_Line
+```c
+void GL_Line( float x1, float y1, float x2, float y2 )
+```
+Description: Draws a line from (x1,y1) to (x2,y2)
+
+### GL_Bezier
+```c
+void GL_Bezier( float x1, float y1, 
+				float x2, float y2, 
+				float x3, float y3, 
+				float x4, float y4 )
+```
+Description: Draws a bezier curve, given 4 control points
+
 ### GL_Fill
 ```c
 void GL_Fill( int r, int g, int b )
 ```
 Description: Sets the fill color
 
-## GL_Background
+### GL_Background
 ```c
 void GL_Background( int r, int g, int b )
 ```
