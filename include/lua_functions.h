@@ -24,6 +24,7 @@ int _GL_Line(lua_State *L);
 int _GL_Bezier(lua_State *L);
 int _GL_Rect(lua_State *L);
 int _GL_Ellipse(lua_State *L);
+int _GL_Text(lua_State *L);
 
 #endif // LUA_FUNCTIONS_H
 

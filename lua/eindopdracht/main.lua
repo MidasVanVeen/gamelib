@@ -20,7 +20,10 @@ function mousePressed(button, state, x, y)
 end
 
 function draw()
+	GL_Fill(255,255,255)
 	GL_Background(0, 0, 0)
+	GL_Text(0.05,0.95, "Gelukkig nieuwjaar!")
+	GL_Text(0.05,0.9, "Klik om vuurwerk af te steken")
 	for i, firework in ipairs(fireworks) do
 		firework:update()
 		firework:draw()

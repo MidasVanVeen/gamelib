@@ -9,5 +9,6 @@ EXTRAFLAGS=-lm -g
 .SILENT: all
 
 all:
+	mkdir ./build 2> /dev/null
 	g++ $(FILES) -o $(OUTDIR)$(OUTNAME) $(INCLUDES) $(GLUTFLAGS) $(LUAFLAGS) $(EXTRAFLAGS)
 	echo "Build complete."

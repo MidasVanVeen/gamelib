@@ -81,6 +81,7 @@ int main(int argc, char** argv) {
 	lua_register(L, "GL_Bezier", _GL_Bezier);
 	lua_register(L, "GL_Fill", _GL_Fill);
 	lua_register(L, "GL_Background", _GL_Background);
+	lua_register(L, "GL_Text", _GL_Text);
 
 	// setting width & height
 	lua_getglobal(L, "GL_WIDTH");

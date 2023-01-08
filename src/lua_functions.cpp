@@ -107,6 +107,19 @@ int _GL_Ellipse(lua_State *L) {
 	return 0;
 }
 
+int _GL_Text(lua_State *L) {
+	/* Gathering arguments */
+	float x = lua_tonumber(L, 1);
+	float y = lua_tonumber(L, 2);
+	const char *text = lua_tostring(L, 3);
+
+	glColor3f(fillcolor[0], fillcolor[1], fillcolor[2]);
+	glRasterPos2f(x, y);
+	for (const char *p = text; *p; p++)
+		glutBitmapCharacter(GLUT_BITMAP_9_BY_15, *p);
+	return 0;
+}
+
 int _GL_Bezier(lua_State *L) {
 	float x1 = lua_tonumber(L, 1);
 	float y1 = lua_tonumber(L, 2);
